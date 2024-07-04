@@ -1,0 +1,435 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --main-color: #ff9f0d;
+    --second-color: #9e9e9e;
+    --text-color: #111111;
+    --bg-color: #fff;
+    --box-shadow: 2px 2px 18px rgb(14 52 54 / 15%)
+}
+img{
+    width: 100%;
+}
+body{
+    color: var(--text-color);
+}
+section{
+    padding: 4.5rem 0 3rem;
+}
+
+
+
+
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    display: block;
+    width: 100%;
+    background: var(--bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+.logo .bx{
+    font-size: 24px;
+    color: var(--main-color);
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    padding: 8px 17px;
+    color: var(--text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+#menu{
+    display: none;
+}
+.btn{
+    padding: 8px 22px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 5rem;
+}
+.btn:hover{
+    background: #3492fd;
+}
+/* Home */
+.home{
+    margin-top: 5rem;
+    background: url(./Img/Home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.home-text{
+    padding-left: 35px;
+}
+.home-text h1{
+    color: var(--bg-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+    gap: 2rem;
+}
+.about-img img{
+    border-radius: 3rem 0 3rem 3rem;
+}
+.about-text span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--main-color);
+}
+.about-text h2{
+    font-size: 1.7rem;
+}
+.about-text p{
+    font-size: 0.940rem;
+    margin: 1rem 0 1rem;
+}
+.sales{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 2.4rem;
+}
+.sales .box{
+    padding: 20px;
+    background: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    border-radius: 2rem;
+}
+.sales .box:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    transition: 0.4s all linear;
+}
+.sales .box .bx{
+    padding: 10px;
+    border-radius: 50%;
+    background: #f6f6fe;
+    color: var(--main-color);
+    font-size: 20px;
+}
+.sales .box h3{
+    font-size: 1.1rem;
+    margin: 1rem 0 0.4rem;
+}
+.sales .box p{
+    font-size: 00.940rem;
+}
+/* Properties */
+.heading{
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.heading span{
+    font-weight: 500;
+    color: var(--main-color);
+}
+.heading h2{
+    font-size: 1.7rem;
+}
+.heading p{
+    font-size: 0.940rem;
+}
+.properties{
+    background: #fbfbfb;
+    border-radius: 2rem;
+
+}
+.properties-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    gap: 3rem;
+    padding: 0 50px;
+}
+.properties-container .box{
+    background: var(--bg-color);
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+}
+.properties-container .box:hover{
+    transform: translateY(-15px);
+    transition: 0.4s;
+}
+.properties-container .box img{
+    border-radius: 1rem;
+}
+/* Newsletter */
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+.newsletter h2{
+    font-size: 1.8rem;
+}
+.newsletter form{
+    background: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    padding: 6px 10px;
+    border-radius: 5.5rem;
+}
+.newsletter form input{
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+.newsletter #email-box{
+    width: 278px;
+}
+.newsletter .btn{
+    padding: 13px 35px;
+    font-weight: 490;
+    text-transform: uppercase;
+}
+.footer{
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 5rem 0 0 0;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 2rem;
+}
+.footer-container h2{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+}
+.footer-box h3{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.footer-box a{
+    font-size: 0.7rem;
+    color: var(--bg-color);
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+.footer-box a:hover{
+    color: var(--text-color);
+}
+.social a{
+    font-size: 25px;
+    margin: right 2rem;
+}
+/* Log In */
+.login{
+    display: grid;
+    grid-template-columns: 0.4fr 0fr;
+    align-items: center;
+    min-height: 100vh;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.login-container h2{
+    font-size: 1.4rem;
+}
+.login-container p {
+    font-size: 0.9rem;
+}
+.login-container form{
+    display: flex;
+    flex-direction: column;
+}
+.login-container form span{
+    font-size: 0.9rem;
+    color: #8a8a8a;
+    margin-bottom: 4px;
+}
+.login-container form input{
+    border: 1px solid #8a8a8a;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 1rem;
+    background: var(--bg-color);
+}
+.login-container form .buttom{
+    outline: none;
+    border: none;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 0.85rem;
+}
+.login-container form .buttom:hover{
+    background: #3492fd;
+}
+.login-container form a{
+    font-size: 0.9rem;
+    text-align: right;
+}
+.login-container .btn{
+    border-radius: 0;
+    text-align: center;
+}
+
+/* Making Responsive */
+@media (max-width:1080px){
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+@media (max-width:880px){
+    section{
+        padding: 4rem 0 3rem;
+    }
+    .properties-container{
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        gap: 1rem;
+        padding: 0 10px;
+    }
+    .footer-container{
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        gap: 1rem;
+    }
+    .login{
+        grid-template-columns: 0.6fr 1fr;
+    }
+}
+ @media(max-width:760px){ 
+    .nav{
+        padding: 10px 0;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--second-color);
+        text-align: center;
+    }
+    .navbar a{
+        display: block;
+        margin: 1rem;
+        padding: 20px;
+        color: var(--main-color);
+    }
+    .navbar a:hover{
+        background: var(--main-color);
+        color: var(--bg-color);
+        transition: 0.3s;
+    }
+    #menu */
+    .about-text span{
+        font-size: 0.9rem;
+    }
+    .about-text h2,
+    .heading h2,
+    .newsletter h2{
+        font-size: 1.4rem;
+    }
+} 
+
+@media(max-width:640px){
+    .about-text{
+        text-align: center;
+    }
+    .about-img{
+        order: 2;
+    }
+    .login{
+        grid-template-columns: 0.8rem 1fr;
+    }
+    .login{
+        margin-top: 3rem;
+    }
+}
+
+@media(max-width:570px){
+    .login-image{
+        display: none;
+    }
+    .login{
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:442px){
+    .home-text{
+        padding-left: 14px;
+    }
+    .home-text h1{
+        font-size: 1.7rem;
+    }
+    .about-text h2,
+    .heading h2,
+    .newsletter h2{
+        font-size: 1.2rem;
+    }
+    .properties-container{
+        padding: 0;
+    }
+    .newsletter #email-box{
+        width: 140px;
+    }
+    .footer{
+        border-radius: 3rem 0 0 0;
+    }
+}
